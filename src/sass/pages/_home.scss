@@ -1,0 +1,151 @@
+
+main {
+  @include outer-container;
+
+  section {
+    @include row();
+
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+#presentation {
+  >div {
+    @include span-columns(12);
+
+    text-align: center;
+
+    @include media($tablet) {
+      @include span-columns(6);
+    }
+  }
+
+  >figure {
+    @include span-columns(12);
+    margin: 0;
+
+    @include media($tablet) {
+      @include span-columns(6);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    figcaption {
+      background-color: #fff;
+      margin: 0;
+      border-bottom: 1px solid $card_border_col;
+      border-left: 1px solid $card_border_col;
+      border-right: 1px solid $card_border_col;
+      text-align: center;
+    }
+  }
+}
+
+#selection {
+  ul {
+    padding: 0;
+  }
+
+  li {
+    @include span-columns(12);
+
+    @include media($tablet-only) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+
+    @include media($desktop) {
+      @include span-columns(3);
+      @include omega(4n);
+    }
+  }
+}
+
+#drive {
+  $icon_height: 180px;
+
+  ol {
+    padding: 0;
+    margin: 0;
+    @include span-columns(10);
+    @include shift(1);
+    list-style-type: none;
+  }
+
+  li {
+    background-color: $card_bgc;
+    border: 1px solid $card_border_col;
+    text-align: center;
+    position: relative;
+    margin-top: $icon_height / 2 + 32px;
+    padding-top: $icon_height / 2;
+
+    @include media($tablet) {
+      @include span-columns(4);
+      margin-top: $icon_height / 2;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: -$icon_height / 2;
+    left: 25%;
+    width: 50%;
+    height: $icon_height;
+    background-color: $primary_color;
+    border-radius: 100%;
+  }
+
+  h3 {
+  }
+
+  p {
+    margin: $vertical_spacing $horizontal_spacing;
+  }
+}
+
+.temoignage {
+  @include span-columns(12);
+  margin-top: 0;
+  margin-bottom: $vertical_spacing * 2;
+  margin-left: 0;
+  background-color: $card_bgc;
+  border: 1px solid $card_border_col;
+  padding: $vertical_spacing $horizontal_spacing;
+
+
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    float: left;
+    margin-right: $horizontal_spacing;
+    margin-bottom: $vertical_spacing;
+  }
+
+  p {
+    margin-top: 0;
+    text-align: justify;
+  }
+
+  footer {
+    text-align: right;
+  }
+
+  @include media($tablet) {
+    @include span-columns(6);
+  }
+}
+
+.test {
+  div {
+    @include span-columns(1);
+    background-color: red;
+  }
+}

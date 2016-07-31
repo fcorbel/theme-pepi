@@ -1,0 +1,51 @@
+@include font-face("montserrat", "../fonts/montserrat/montserrat-bold-webfont", bold);
+@include font-face("montserrat", "../fonts/montserrat/montserrat-regular-webfont");
+
+@include font-face("roboto", "../fonts/roboto/roboto-black-webfont", 900);
+@include font-face("roboto", "../fonts/roboto/roboto-blackitalic-webfont", 900, italic);
+@include font-face("roboto", "../fonts/roboto/roboto-bold-webfont", 700);
+@include font-face("roboto", "../fonts/roboto/roboto-bolditalic-webfont", 700, italic);
+@include font-face("roboto", "../fonts/roboto/roboto-regular-webfont", 400);
+@include font-face("roboto", "../fonts/roboto/roboto-italic-webfont", 400, italic);
+@include font-face("roboto", "../fonts/roboto/roboto-light-webfont", 300);
+@include font-face("roboto", "../fonts/roboto/roboto-lightitalic-webfont", 300, italic);
+@include font-face("roboto", "../fonts/roboto/roboto-medium-webfont", 500);
+@include font-face("roboto", "../fonts/roboto/roboto-mediumitalic-webfont", 500, italic);
+@include font-face("roboto", "../fonts/roboto/roboto-thin-webfont", 100);
+@include font-face("roboto", "../fonts/roboto/roboto-thinitalic-webfont", 100, italic);
+
+$title_font: "montserrat";
+$text_font: "roboto";
+
+body {
+  font-size: $root_font_size;
+  font-family: $text_font;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $title_font;
+}
+
+h1 {
+  color: shade($text_color, 50%);
+}
+
+h2 {
+  color: shade($text_color, 50%);
+  font-size: 3.4rem;
+  margin: 4rem 0 3rem 0;
+}
+
+h3 {
+  color: shade($text_color, 50%);
+  font-size: 2.8rem;
+}
+
+h4 {
+  color: shade($text_color, 50%);
+}
+
+p {
+  font-size: 2.0rem;
+}
+

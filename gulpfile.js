@@ -1,6 +1,10 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var bourbon = require("bourbon").includePaths;
+var neat = require("bourbon-neat").includePaths;
 var browserSync = require('browser-sync').create();
+var plumber = require('gulp-plumber');
+var gutil = require('gulp-util');
 
 gulp.task('hello', function() {
   console.log('hello world');
@@ -8,8 +12,14 @@ gulp.task('hello', function() {
 
 gulp.task('sass', function() {
   return gulp.src('src/sass/**/*.scss')
-    .pipe(sass())
-    .pipe(gulp.dest('src/css'))
+    .pipe(plumber(function(error) {
+      gutil.log(gutil.colors.red(error.message));
+      this.emit('end');
+      }))
+    .pipe(sass({
+      includePaths: ['sass'].concat(bourbon).concat(neat)
+    }))
+    .pipe(gulp.dest('assets/css'))
     .pipe(browserSync.reload({
       stream: true
     }));
