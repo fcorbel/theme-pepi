@@ -1,6 +1,23 @@
-<?php get_header(); ?>
+<?php get_header();
+do_action('woocommerce_before_main_content');
+?>
 
 <main>
+  <?php if (have_posts()) : 
+    // Start the loop
+
+    // do_action( 'storefront_loop_before' );
+    while ( have_posts() ) : the_post();
+      get_template_part( 'content', get_post_format() );
+    endwhile;
+    // do_action( 'storefront_loop_before' );
+
+  else :
+    // Nothing to show
+
+    endif; ?>
+
+
   <section id="presentation">
     <h2>Presentation de la pepi</h2>
       <div>
@@ -22,6 +39,8 @@
 
   <section id="selection">
     <h2>La selection du moment</h2>
+    <?php echo do_shortcode('[featured_products per_page="4" columns="4"]'); ?>
+
     <ul>
       <li>
         <article class='card'>
@@ -135,4 +154,7 @@
 
 </main>
 
-<?php get_footer(); ?>
+
+<?php do_action('woocommerce_before_main_content');
+
+get_footer(); ?>
