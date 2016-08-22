@@ -1,14 +1,36 @@
 
-body {
-  background-color: $background_color;
-  color: $text_color;
-}
+$black: #333;
+$white: #fff;
 
-$card_bgc: #fff;
-$card_border_col: #888;
+$green: #b5ce4d;
+$purple: #c4436b;
+$red: #f74b4b;
+$blue: #61a6d6;
+$yellow: #f0f;
+$beige: #c1a983;
+$gray: #eee;
+$brown: #c1a983;
+$orange: #d35907;
 
+// Dark variants
+$dark_green: shade(#b5ce4d, 50%);
+$dark_purple: shade(#c4436b, 50%);
+$dark_red: shade(#f00, 50%);
+$dark_blue: shade(#00f, 50%);
+$dark_yellow: shade(#f0f, 50%);
+$dark_beige: shade(#f0f, 50%);
+$dark_gray: shade($gray, 50%);
+$dark_brown: shade(#f0f, 50%);
+$dark_orange: shade(#f0f, 50%);
 
-$primary_color: #b5ce4d; // Vert
-$secondary_color: #c4436b; // Violet
+// Light variants
+$light_green: tint(#b5ce4d, 50%);
+$light_purple: tint(#c4436b, 50%);
+$light_red: tint(#f00, 50%);
+$light_blue: tint(#00f, 50%);
+$light_yellow: tint(#f0f, 50%);
+$light_beige: tint(#f0f, 50%);
+$light_gray: tint(#f0f, 50%);
+$light_brown: tint(#f0f, 50%);
+$light_orange: tint(#f0f, 50%);
 
-$cta_color: $primary_color;

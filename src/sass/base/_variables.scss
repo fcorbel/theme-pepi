@@ -7,9 +7,24 @@ $root_font_size: 1.6rem;
 $vertical_spacing: $root_font_size;
 $horizontal_spacing: $root_font_size;
 
+$tablet_breakpoint: 40em;
+$desktop_breakpoint: 60em;
+
 
 //////////////////////////
 // Basic colors
 //////////////////////////
-$text_color: #333;
-$background_color: #f8f7de;
+$text_color: $black;
+// $background_color: #f8f7de;
+$background_color: $white;
+$primary_color: $green;
+$secondary_color: $purple;
+$cta_color: $blue;
+
+
+//////////////////////////
+// Components colors
+//////////////////////////
+// Card
+$card_bgc: $white;
+$card_border_col: #888; //TODO change to $dark_gray

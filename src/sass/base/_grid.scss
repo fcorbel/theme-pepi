@@ -4,11 +4,6 @@
 
 // $max-width: 500px;
 
-// TODO use em in media queries
-// $landscape: new-breakpoint(min-width 480px 4);
-// $tablet: new-breakpoint(min-width 760px 8);
-// $desktop: new-breakpoint(min-width 960px 12);
-
-$tablet: new-breakpoint(min-width 40em); // 320px
-$tablet-only: new-breakpoint(min-width 40em max-width 59.9em);
-$desktop: new-breakpoint(min-width 60em);
+$tablet: new-breakpoint(min-width $tablet_breakpoint);
+$tablet-only: new-breakpoint(min-width $tablet_breakpoint max-width $desktop_breakpoint - 0.1);
+$desktop: new-breakpoint(min-width $desktop_breakpoint);

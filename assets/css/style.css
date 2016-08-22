@@ -374,8 +374,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #f8f7de;
-  color: #333; }
+  background-color: #b5ce4d; }
 
 @font-face {
   font-family: "montserrat";
@@ -487,27 +486,32 @@ p {
   font-size: 2.0rem; }
 
 .card {
+  background-color: #fff;
+  border: 1px solid #888;
+  padding: 1.6rem 1.6rem; }
+
+.plant_card {
   position: relative;
   background-color: #fff;
   margin: 1.6rem 1.6rem;
   border: 1px solid #888; }
-  .card a {
+  .plant_card a {
     display: block;
     color: #333;
     text-decoration: none; }
-    .card a:hover img {
+    .plant_card a:hover img {
       -webkit-filter: brightness(1.1);
       filter: brightness(1.1); }
-    .card a:hover header {
+    .plant_card a:hover header {
       box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
       -webkit-transition: box-shadow 0.2s;
       -moz-transition: box-shadow 0.2s;
       transition: box-shadow 0.2s; }
-  .card img {
+  .plant_card img {
     display: block;
     width: 100%;
     height: auto; }
-  .card header {
+  .plant_card header {
     position: absolute;
     left: -9px;
     background-color: #fff;
@@ -515,31 +519,31 @@ p {
     text-align: center;
     height: 6.4rem;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4); }
-    .card header h3 {
+    .plant_card header h3 {
       margin: 0.8rem 0;
       height: 4.8rem;
       font-size: 2rem;
       line-height: 4.8rem;
       border-top: 2px solid #ff0000;
       border-bottom: 2px solid #ff0000; }
-    .card header::before, .card header::after {
+    .plant_card header::before, .plant_card header::after {
       content: "";
       display: block;
       position: absolute;
       bottom: -8px; }
-    .card header::before {
+    .plant_card header::before {
       left: 0;
       border-right: 4.5px solid #4d0000;
       border-top: 4.5px solid #4d0000;
       border-left: 4.5px solid transparent;
       border-bottom: 4.5px solid transparent; }
-    .card header::after {
+    .plant_card header::after {
       right: 0;
       border-right: 4.5px solid transparent;
       border-top: 4.5px solid #4d0000;
       border-left: 4.5px solid #4d0000;
       border-bottom: 4.5px solid transparent; }
-  .card p {
+  .plant_card p {
     margin-top: 6.4rem;
     margin-bottom: 0;
     padding: 1.6rem;
