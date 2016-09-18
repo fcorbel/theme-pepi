@@ -1,0 +1,17 @@
+.products {
+  @include clearfix;
+
+  li {
+    @include span-columns(12);
+
+    @include media($tablet-only) {
+      @include span-columns(6);
+      @include omega(2n);
+    }
+
+    @include media($desktop) {
+      @include span-columns(3);
+      @include omega(4n);
+    }
+  }
+}

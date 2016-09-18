@@ -1,0 +1,34 @@
+.product {
+  @include row();
+
+  .images {
+    @include span-columns(6);
+    margin-bottom: $vertical-spacing;
+  }
+
+  .summary {
+    @include span-columns(6);
+    @include omega();
+    margin-bottom: $vertical-spacing;
+
+
+  }
+
+  .entry-details {
+    @include span-columns(12);
+  }
+
+  #caracteristics_list {
+    @include span-columns(6);
+  }
+
+  #plant_calendar {
+    @include span-columns(6);
+    @include omega();
+    margin-bottom: $vertical-spacing;
+  }
+
+  .related.products {
+    @include span-columns(12);
+  }
+}

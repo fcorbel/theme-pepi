@@ -26,20 +26,37 @@ do_action('woocommerce_before_main_content');
     <?php echo do_shortcode('[featured_products per_page="4" columns="4"]'); ?>
   </section>
 
+  <section id="actu">
+    <h2>Notre actualité</h2>
+
+    <?php
+      $latest_blog_post = new WP_Query( array( 'posts_per_page' => 1 ) );
+
+      if ($latest_blog_post->have_posts()) {
+        while ($latest_blog_post->have_posts()) : $latest_blog_post->the_post();
+          get_template_part('blocs/content', 'post');
+        endwhile;
+        echo("<a href='' class='btn secondary'>Toutes nos actualités</a>");
+      } else {
+        echo("<p>Nous n'avons pas encore d'actualité.</p>");
+      }
+    ?>
+  </section>
+
   <section id="drive">
     <h2>Le drive</h2>
     <ol>
-      <li>
+      <li class="card">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/plant-icon.png" alt="">
         <h3>Choisissez</h3>
         <p>Ipsum obcaecati qui asperiores distinctio magnam rerum aperiam unde. Reiciendis</p>
       </li>
-      <li>
+      <li class="card">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/plant-icon.png" alt="">
         <h3>Achetez</h3>
         <p>Ipsum obcaecati qui asperiores distinctio magnam rerum aperiam unde. Reiciendis</p>
       </li>
-      <li>
+      <li class="card">
         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/plant-icon.png" alt="">
         <h3>Receptionner</h3>
         <p>Ipsum obcaecati qui asperiores distinctio magnam rerum aperiam unde. Reiciendis</p>
@@ -49,14 +66,14 @@ do_action('woocommerce_before_main_content');
 
   <section id="temoignages">
     <h2>Temoignages clients</h2>
-    <blockquote class="temoignage">
+    <blockquote class="temoignage card">
       <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pikachu.png" alt="">
       <p>
   Amet inventore eum nostrum cum excepturi similique consequatur. Ratione sequi beatae ab quidem asperiores illum recusandae placeat eos praesentium. Veritatis dolore quam ea atque dicta. Ut quibusdam totam accusamus dicta.
       </p>
       <footer><cite><a href="">Pikachu</a></cite></footer>
     </blockquote>
-    <blockquote class="temoignage">
+    <blockquote class="temoignage card">
       <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/pikachu.png" alt="">
       <p>
   Amet inventore eum nostrum cum excepturi similique consequatur. Ratione sequi beatae ab quidem asperiores illum recusandae placeat eos praesentium. Veritatis dolore quam ea atque dicta. Ut quibusdam totam accusamus dicta.

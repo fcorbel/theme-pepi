@@ -7,3 +7,6 @@
 $tablet: new-breakpoint(min-width $tablet_breakpoint);
 $tablet-only: new-breakpoint(min-width $tablet_breakpoint max-width $desktop_breakpoint - 0.1);
 $desktop: new-breakpoint(min-width $desktop_breakpoint);
+
+// Now that neat is initialized, we import it
+@import 'neat';

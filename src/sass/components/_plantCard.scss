@@ -1,11 +1,4 @@
-.plant_card {
-  $header_height: $vertical_spacing*4;
-  $card_color: #ff0000;
-
-  position: relative;
-  background-color: $card_bgc;
-  margin: $vertical_spacing $horizontal_spacing;
-  border: 1px solid $card_border_col;
+.plantCard {
 
   a {
     display: block;
@@ -16,11 +9,6 @@
       img {
         @include filter(brightness(1.1));
       }
-
-      header {
-        box-shadow: 0 5px 7px rgba(0, 0, 0, .35);
-        @include transition(box-shadow .2s);
-      }
     }
   }
 
@@ -30,56 +18,88 @@
     height: auto;
   }
 
-  header {
-    $triangle_width: 10px - 1px;
-    $label_width: calc(100% + #{$triangle_width}*2);
 
-    position: absolute;
-    left: -$triangle_width;
-    background-color: $card_bgc;
-    width: $label_width;
-    text-align: center;
-    height: $header_height;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, .4);
-
-    h3 {
-      margin: $vertical_spacing/2 0;
-      height: $header_height - $vertical_spacing;
-      font-size: 2rem;
-      line-height: $header_height - $vertical_spacing;
-      border-top: 2px solid $card_color;
-      border-bottom: 2px solid $card_color;
-    }
-
-    &::before, &::after {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: -$triangle_width + 1px;
-    }
-
-    &::before {
-      left: 0;
-      border-right: $triangle_width/2 solid shade($card_color, 70%);
-      border-top: $triangle_width/2 solid shade($card_color, 70%);
-      border-left: $triangle_width/2 solid transparent;
-      border-bottom: $triangle_width/2 solid transparent;
-    }
-
-    &::after {
-      right: 0;
-      border-right: $triangle_width/2 solid transparent;
-      border-top: $triangle_width/2 solid shade($card_color, 70%);
-      border-left: $triangle_width/2 solid shade($card_color, 70%);
-      border-bottom: $triangle_width/2 solid transparent;
-    }
-  }
-
-  p {
-    margin-top: $header_height;
-    margin-bottom: 0;
-    padding: $vertical_spacing;
-    text-align: center;
-  }
+  // $header_height: $vertical_spacing*4;
+  // $card_color: #ff0000;
+  //
+  // position: relative;
+  // background-color: $card_bgc;
+  // margin: $vertical_spacing $horizontal_spacing;
+  // border: 1px solid $card_border_col;
+  //
+  // a {
+  //   display: block;
+  //   color: $text_color;
+  //   text-decoration: none;
+  //
+  //   &:hover {
+  //     img {
+  //       @include filter(brightness(1.1));
+  //     }
+  //
+  //     header {
+  //       box-shadow: 0 5px 7px rgba(0, 0, 0, .35);
+  //       @include transition(box-shadow .2s);
+  //     }
+  //   }
+  // }
+  //
+  // img {
+  //   display: block;
+  //   width: 100%;
+  //   height: auto;
+  // }
+  //
+  // header {
+  //   $triangle_width: 10px - 1px;
+  //   $label_width: calc(100% + #{$triangle_width}*2);
+  //
+  //   position: absolute;
+  //   left: -$triangle_width;
+  //   background-color: $card_bgc;
+  //   width: $label_width;
+  //   text-align: center;
+  //   height: $header_height;
+  //   box-shadow: 0 4px 5px rgba(0, 0, 0, .4);
+  //
+  //   h3 {
+  //     margin: $vertical_spacing/2 0;
+  //     height: $header_height - $vertical_spacing;
+  //     font-size: 2rem;
+  //     line-height: $header_height - $vertical_spacing;
+  //     border-top: 2px solid $card_color;
+  //     border-bottom: 2px solid $card_color;
+  //   }
+  //
+  //   &::before, &::after {
+  //     content: "";
+  //     display: block;
+  //     position: absolute;
+  //     bottom: -$triangle_width + 1px;
+  //   }
+  //
+  //   &::before {
+  //     left: 0;
+  //     border-right: $triangle_width/2 solid shade($card_color, 70%);
+  //     border-top: $triangle_width/2 solid shade($card_color, 70%);
+  //     border-left: $triangle_width/2 solid transparent;
+  //     border-bottom: $triangle_width/2 solid transparent;
+  //   }
+  //
+  //   &::after {
+  //     right: 0;
+  //     border-right: $triangle_width/2 solid transparent;
+  //     border-top: $triangle_width/2 solid shade($card_color, 70%);
+  //     border-left: $triangle_width/2 solid shade($card_color, 70%);
+  //     border-bottom: $triangle_width/2 solid transparent;
+  //   }
+  // }
+  //
+  // p {
+  //   margin-top: $header_height;
+  //   margin-bottom: 0;
+  //   padding: $vertical_spacing;
+  //   text-align: center;
+  // }
 
 }

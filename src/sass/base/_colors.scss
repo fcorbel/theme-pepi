@@ -13,24 +13,23 @@ $brown: #c1a983;
 $orange: #d35907;
 
 // Dark variants
-$dark_green: shade(#b5ce4d, 50%);
-$dark_purple: shade(#c4436b, 50%);
-$dark_red: shade(#f00, 50%);
-$dark_blue: shade(#00f, 50%);
-$dark_yellow: shade(#f0f, 50%);
-$dark_beige: shade(#f0f, 50%);
+$dark_green: shade($green, 50%);
+$dark_purple: shade($purple, 50%);
+$dark_red: shade($red, 50%);
+$dark_blue: shade($blue, 50%);
+$dark_yellow: shade($yellow, 50%);
+$dark_beige: shade($beige, 50%);
 $dark_gray: shade($gray, 50%);
-$dark_brown: shade(#f0f, 50%);
-$dark_orange: shade(#f0f, 50%);
+$dark_brown: shade($brown, 50%);
+$dark_orange: shade($orange, 50%);
 
 // Light variants
-$light_green: tint(#b5ce4d, 50%);
-$light_purple: tint(#c4436b, 50%);
-$light_red: tint(#f00, 50%);
-$light_blue: tint(#00f, 50%);
-$light_yellow: tint(#f0f, 50%);
-$light_beige: tint(#f0f, 50%);
-$light_gray: tint(#f0f, 50%);
-$light_brown: tint(#f0f, 50%);
-$light_orange: tint(#f0f, 50%);
-
+$light_green: tint($green, 50%);
+$light_purple: tint($purple, 50%);
+$light_red: tint($red, 50%);
+$light_blue: tint($blue, 50%);
+$light_yellow: tint($yellow, 50%);
+$light_beige: tint($beige, 50%);
+$light_gray: tint($gray, 50%);
+$light_brown: tint($brown, 50%);
+$light_orange: tint($orange, 50%);

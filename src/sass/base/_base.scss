@@ -1,14 +1,14 @@
-@import 'bourbon';
-@import 'neat';
-
 html {
   font-size: 62.5%; // =10px
 }
 
 body {
-  background-color: $green;
+  background-color: $white;
+  background: linear-gradient($white, $light_green);
 }
 
-
+main {
+  // padding: $vertical_spacing 0;
+}
 
 

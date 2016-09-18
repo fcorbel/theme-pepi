@@ -374,7 +374,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #b5ce4d; }
+  background-color: #fff;
+  background: linear-gradient(#fff, #dae7a6); }
 
 @font-face {
   font-family: "montserrat";
@@ -483,71 +484,116 @@ h4 {
   color: #1a1a1a; }
 
 p {
+  color: #333;
   font-size: 2.0rem; }
+
+a.btn {
+  padding: 1.6rem 1.6rem;
+  margin: 1.6rem 1.6rem;
+  border: 1px solid #333;
+  color: #333;
+  background-color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 5px; }
+
+button {
+  padding: 1.6rem 1.6rem;
+  margin: 1.6rem 1.6rem;
+  border: 1px solid #333;
+  color: #333;
+  background-color: #fff;
+  font-size: 2rem;
+  border-radius: 5px; }
+
+.btn.secondary, button.secondary {
+  background-color: #c4436b;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s; }
+  .btn.secondary:hover, button.secondary:hover {
+    background-color: #c84e74; }
+
+.btn.primary, button.primary {
+  background-color: #b5ce4d;
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s; }
+  .btn.primary:hover, button.primary:hover {
+    background-color: #b9d158; }
+
+.woocommerce-breadcrumb {
+  margin: 1.6rem 1.6rem; }
+
+#mega-menu-main_nav {
+  font-family: "montserrat" !important;
+  color: red; }
 
 .card {
   background-color: #fff;
-  border: 1px solid #888;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   padding: 1.6rem 1.6rem; }
 
-.plant_card {
-  position: relative;
-  background-color: #fff;
-  margin: 1.6rem 1.6rem;
-  border: 1px solid #888; }
-  .plant_card a {
-    display: block;
-    color: #333;
-    text-decoration: none; }
-    .plant_card a:hover img {
-      -webkit-filter: brightness(1.1);
-      filter: brightness(1.1); }
-    .plant_card a:hover header {
-      box-shadow: 0 5px 7px rgba(0, 0, 0, 0.35);
-      -webkit-transition: box-shadow 0.2s;
-      -moz-transition: box-shadow 0.2s;
-      transition: box-shadow 0.2s; }
-  .plant_card img {
-    display: block;
-    width: 100%;
-    height: auto; }
-  .plant_card header {
-    position: absolute;
-    left: -9px;
-    background-color: #fff;
-    width: calc(100% + 9px*2);
+.plantCard a {
+  display: block;
+  color: #333;
+  text-decoration: none; }
+  .plantCard a:hover img {
+    -webkit-filter: brightness(1.1);
+    filter: brightness(1.1); }
+
+.plantCard img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+#plant_calendar {
+  padding: 0; }
+  #plant_calendar ol, #plant_calendar ul {
+    margin: 0;
+    padding: 0; }
+  #plant_calendar ol li {
+    list-style-type: none;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
-    height: 6.4rem;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.4); }
-    .plant_card header h3 {
-      margin: 0.8rem 0;
-      height: 4.8rem;
-      font-size: 2rem;
-      line-height: 4.8rem;
-      border-top: 2px solid #ff0000;
-      border-bottom: 2px solid #ff0000; }
-    .plant_card header::before, .plant_card header::after {
-      content: "";
-      display: block;
-      position: absolute;
-      bottom: -8px; }
-    .plant_card header::before {
-      left: 0;
-      border-right: 4.5px solid #4d0000;
-      border-top: 4.5px solid #4d0000;
-      border-left: 4.5px solid transparent;
-      border-bottom: 4.5px solid transparent; }
-    .plant_card header::after {
-      right: 0;
-      border-right: 4.5px solid transparent;
-      border-top: 4.5px solid #4d0000;
-      border-left: 4.5px solid #4d0000;
-      border-bottom: 4.5px solid transparent; }
-  .plant_card p {
-    margin-top: 6.4rem;
-    margin-bottom: 0;
-    padding: 1.6rem;
-    text-align: center; }
+    font-size: 2rem;
+    width: 80px;
+    border: 1px solid black;
+    margin-bottom: 1.6rem;
+    margin-right: 0.8rem; }
+  #plant_calendar .plantation {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 50%;
+    width: 100%;
+    background-color: #b5ce4d; }
+  #plant_calendar .floraison {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    height: 50%;
+    width: 100%;
+    background-color: #f74b4b; }
+  #plant_calendar .legende {
+    float: right;
+    margin-right: 6.4rem; }
+    #plant_calendar .legende li {
+      height: 20px;
+      list-style-type: none;
+      line-height: 20px 2;
+      margin-top: 1.6rem; }
+    #plant_calendar .legende div {
+      position: static;
+      height: 100%;
+      width: 40px;
+      margin-right: 1.6rem;
+      float: left;
+      border: 1px solid black; }
 
 #main_footer {
   background-color: gray; }
@@ -576,6 +622,54 @@ p {
       clear: both;
       content: "";
       display: block; }
+  #main_header .custom-logo {
+    width: 100px;
+    height: 100px;
+    float: left; }
+
+#contact_infos {
+  margin-bottom: 1.6rem; }
+  #contact_infos #contact {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    #contact_infos #contact:last-child {
+      margin-right: 0; }
+    #contact_infos #contact address {
+      padding-left: 40%;
+      margin-bottom: 3.2rem; }
+      #contact_infos #contact address p {
+        margin-top: 0;
+        margin-bottom: 1.6rem; }
+      #contact_infos #contact address a {
+        text-decoration: none;
+        color: #333; }
+    #contact_infos #contact form {
+      text-align: right;
+      margin-bottom: 1.6rem; }
+      #contact_infos #contact form p {
+        margin-top: 0;
+        margin-bottom: 1.6rem; }
+      #contact_infos #contact form label {
+        margin-right: 1.6rem; }
+      #contact_infos #contact form input, #contact_infos #contact form textarea {
+        width: 60%; }
+      #contact_infos #contact form input[type="submit"] {
+        width: auto; }
+      #contact_infos #contact form .required::after {
+        content: "*";
+        color: red; }
+  #contact_infos #map {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    #contact_infos #map:last-child {
+      margin-right: 0; }
+    #contact_infos #map iframe {
+      width: 100%;
+      height: 500px; }
 
 main {
   max-width: 1200px;
@@ -634,9 +728,6 @@ main {
   #presentation > figure figcaption {
     background-color: #fff;
     margin: 0;
-    border-bottom: 1px solid #888;
-    border-left: 1px solid #888;
-    border-right: 1px solid #888;
     text-align: center; }
 
 #selection ul {
@@ -674,6 +765,9 @@ main {
       #selection li:nth-child(4n+1) {
         clear: left; } }
 
+#actu .btn {
+  float: right; }
+
 #drive ol {
   padding: 0;
   margin: 0;
@@ -688,7 +782,6 @@ main {
 
 #drive li {
   background-color: #fff;
-  border: 1px solid #888;
   text-align: center;
   position: relative;
   margin-top: 122px;
@@ -724,7 +817,6 @@ main {
   margin-bottom: 3.2rem;
   margin-left: 0;
   background-color: #fff;
-  border: 1px solid #888;
   padding: 1.6rem 1.6rem; }
   .temoignage:last-child {
     margin-right: 0; }
@@ -757,3 +849,96 @@ main {
   background-color: red; }
   .test div:last-child {
     margin-right: 0; }
+
+.products::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.products li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .products li:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 40em) and (max-width: 59.9em) {
+    .products li {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .products li:last-child {
+        margin-right: 0; }
+      .products li:nth-child(2n) {
+        margin-right: 0; }
+      .products li:nth-child(2n+1) {
+        clear: left; } }
+  @media screen and (min-width: 60em) {
+    .products li {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 23.23176%; }
+      .products li:last-child {
+        margin-right: 0; }
+      .products li:nth-child(4n) {
+        margin-right: 0; }
+      .products li:nth-child(4n+1) {
+        clear: left; } }
+
+.product {
+  display: block; }
+  .product::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .product .images {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-bottom: 1.6rem; }
+    .product .images:last-child {
+      margin-right: 0; }
+  .product .summary {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-right: 0;
+    margin-bottom: 1.6rem; }
+    .product .summary:last-child {
+      margin-right: 0; }
+  .product .entry-details {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .product .entry-details:last-child {
+      margin-right: 0; }
+  .product #caracteristics_list {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .product #caracteristics_list:last-child {
+      margin-right: 0; }
+  .product #plant_calendar {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    margin-right: 0;
+    margin-bottom: 1.6rem; }
+    .product #plant_calendar:last-child {
+      margin-right: 0; }
+  .product .related.products {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .product .related.products:last-child {
+      margin-right: 0; }
+
+/*# sourceMappingURL=.maps/style.css.map */

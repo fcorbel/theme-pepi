@@ -39,9 +39,9 @@ main {
     figcaption {
       background-color: #fff;
       margin: 0;
-      border-bottom: 1px solid $card_border_col;
-      border-left: 1px solid $card_border_col;
-      border-right: 1px solid $card_border_col;
+      // border-bottom: 1px solid $card_border_col;
+      // border-left: 1px solid $card_border_col;
+      // border-right: 1px solid $card_border_col;
       text-align: center;
     }
   }
@@ -67,6 +67,13 @@ main {
   }
 }
 
+#actu {
+
+  .btn {
+    float: right;
+  }
+}
+
 #drive {
   $icon_height: 180px;
 
@@ -80,7 +87,7 @@ main {
 
   li {
     background-color: $card_bgc;
-    border: 1px solid $card_border_col;
+    // border: 1px solid $card_border_col;
     text-align: center;
     position: relative;
     margin-top: $icon_height / 2 + 32px;
@@ -116,7 +123,7 @@ main {
   margin-bottom: $vertical_spacing * 2;
   margin-left: 0;
   background-color: $card_bgc;
-  border: 1px solid $card_border_col;
+  // border: 1px solid $card_border_col;
   padding: $vertical_spacing $horizontal_spacing;
 
 

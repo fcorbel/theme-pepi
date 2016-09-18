@@ -1,0 +1,39 @@
+@mixin my_button() {
+  padding: $vertical_spacing $horizontal_spacing;
+  margin: $vertical_spacing $horizontal_spacing;
+  border: 1px solid $black;
+  color: $black;
+  background-color: $white;
+  font-size: 2rem;
+}
+
+a.btn {
+  @include my_button();
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+button {
+  @include my_button();
+  border-radius: 5px;
+
+}
+
+
+.btn.secondary, button.secondary {
+  background-color: $secondary_color;
+  @include transition(background-color .2s);
+
+  &:hover {
+    background-color: tint($secondary_color, 6%);
+  }
+}
+
+.btn.primary, button.primary {
+  background-color: $primary_color;
+  @include transition(background-color .2s);
+
+  &:hover {
+    background-color: tint($primary_color, 6%);
+  }
+}

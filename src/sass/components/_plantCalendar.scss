@@ -1,0 +1,64 @@
+#plant_calendar {
+  $cal_height: 40px;
+  $month_width: 80px;
+
+  padding: 0;
+
+  ol, ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  ol li {
+    list-style-type: none;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    height: $cal_height;
+    line-height: $cal_height;
+    text-align: center;
+    font-size: 2rem;
+    width: $month_width;
+    border: 1px solid black;
+    margin-bottom: $vertical_spacing;
+    margin-right: $horizontal_spacing / 2;
+  }
+
+  .plantation {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    height: 50%;
+    width: 100%;
+    background-color: $green;
+  }
+
+  .floraison {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    height: 50%;
+    width: 100%;
+    background-color: $red;
+  }
+
+  .legende {
+    float: right;
+    margin-right: $horizontal_spacing *4;
+    li {
+      height: $cal_height / 2;
+      list-style-type: none;
+      line-height: $cal_height / 2 2;
+      margin-top: $vertical_spacing;
+    }
+    //
+    div {
+      position: static;
+      height: 100%;
+      width: $month_width / 2;
+      margin-right: $horizontal_spacing;
+      float: left;
+      border: 1px solid black;
+    }
+  }
+}

@@ -1,3 +1,5 @@
+// Base imports
+@import 'bourbon';
 
 // Base
 @import 'base/colors';
@@ -15,6 +17,7 @@
 @import 'components/nav';
 @import 'components/card';
 @import 'components/plantCard';
+@import 'components/plantCalendar';
 
 // Layout
 @import 'layout/footer';
@@ -24,3 +27,7 @@
 @import 'pages/about';
 @import 'pages/contact';
 @import 'pages/home';
+@import 'pages/archive';
+@import 'pages/single_product';
+
+
