@@ -7,6 +7,9 @@ $root_font_size: 1.6rem;
 $vertical_spacing: $root_font_size;
 $horizontal_spacing: $root_font_size;
 
+$form_input_height: $root_font_size * 2.4;
+
+
 $tablet_breakpoint: 40em;
 $desktop_breakpoint: 60em;
 
@@ -21,6 +24,7 @@ $primary_color: $green;
 $secondary_color: $purple;
 $cta_color: $blue;
 
+$form_bg_color: $white;
 
 //////////////////////////
 // Components colors

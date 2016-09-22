@@ -11,7 +11,29 @@
     @include omega();
     margin-bottom: $vertical-spacing;
 
+    .price {
+      float: left;
+      font-size: 3rem;
+      line-height: 94px;
+      margin: 0;
+      margin-right: $horizontal_spacing;
+      color: $secondary_color;
+    }
 
+    .cart {
+      text-align: right
+    }
+
+    .quantity {
+      display: inline-block;
+    }
+
+    .single_add_to_cart_button {
+    }
+
+    .product_meta span {
+      display: block;
+    }
   }
 
   .entry-details {
@@ -20,6 +42,46 @@
 
   #caracteristics_list {
     @include span-columns(6);
+
+    .tag_info {
+      position: relative;
+      display: inline-block;
+
+      &.with_thumbnail::after {
+        content: attr(data-description);
+        display:none;
+        position: absolute;
+        margin-top: 15px;
+        background-color: $secondary_color; 
+        padding: $vertical_spacing $horizontal_spacing;
+        width: 200px;
+      }
+
+      &:hover::after {
+        display: block;
+      }
+
+      &.with_thumbnail::before {
+        content: "";
+        display:none;
+        height: 0;
+        width: 0;
+        border-bottom: 15px solid $secondary_color;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        position: absolute;
+        bottom: -15px;
+        left: 15px;
+      }
+
+      &:hover::before {
+        display: block;
+      }
+
+      img {
+        display: block;
+      }
+    }
   }
 
   #plant_calendar {
