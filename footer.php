@@ -1,6 +1,8 @@
 
 <footer id='main_footer'>
-  <span>This is my footer</span>
+  <?php footer_nav(); ?>
+
+  <span id="website-author">Site réalisé par la team pépi</span>
 </footer>
 
 </body>

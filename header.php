@@ -17,8 +17,8 @@
     <header>
       <!-- title -->
       <?php get_theme_custom_logo(); ?>
-      <a href="<?php echo site_url(); ?>">
-        <h1>This is my header</h1>
+      <a id="site-identity" href="<?php echo site_url(); ?>">
+        <h1><?php bloginfo('name'); ?></h1>
       </a>
       <!-- search -->
       <!-- menu -->

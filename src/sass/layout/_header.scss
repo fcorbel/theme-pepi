@@ -1,22 +1,20 @@
 
 #top_header {
   color: white;
-  background-color: black;
+  background-color: $secondary_color;
 
   section {
     @include outer-container;
-    background-color: gray;
   }
 
 }
 
 #main_header {
-  background-color: pink;
-
   header {
     @include outer-container;
-    background-color: brown;
+    background-color: $primary_color;
   }
+
 
   .custom-logo {
     width: 100px;
@@ -24,4 +22,15 @@
     float: left;
   }
 
+}
+
+#site-identity {
+  text-decoration: none;
+  display: block;
+  padding: 20px 0;
+
+  h1 {
+    margin: 0;
+
+  }
 }

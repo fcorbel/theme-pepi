@@ -606,35 +606,47 @@ input[type=number] {
 
 #main_footer {
   background-color: gray; }
+  #main_footer::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+#website-author {
+  float: right; }
 
 #top_header {
   color: white;
-  background-color: black; }
+  background-color: #c4436b; }
   #top_header section {
     max-width: 1200px;
     margin-left: auto;
-    margin-right: auto;
-    background-color: gray; }
+    margin-right: auto; }
     #top_header section::after {
       clear: both;
       content: "";
       display: block; }
 
-#main_header {
-  background-color: pink; }
-  #main_header header {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: brown; }
-    #main_header header::after {
-      clear: both;
-      content: "";
-      display: block; }
-  #main_header .custom-logo {
-    width: 100px;
-    height: 100px;
-    float: left; }
+#main_header header {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #b5ce4d; }
+  #main_header header::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+#main_header .custom-logo {
+  width: 100px;
+  height: 100px;
+  float: left; }
+
+#site-identity {
+  text-decoration: none;
+  display: block;
+  padding: 20px 0; }
+  #site-identity h1 {
+    margin: 0; }
 
 #contact_infos {
   margin-bottom: 1.6rem; }

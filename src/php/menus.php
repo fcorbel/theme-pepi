@@ -14,3 +14,18 @@ function main_nav() {
     'container' => false,
   ));
 }
+
+register_nav_menus(
+  array (
+    'footer_nav' => 'Menu footer'
+  )
+);
+
+function footer_nav() {
+  wp_nav_menu(array(
+    'menu_id' => 'footer_nav',
+    'theme_location' => 'footer_nav',
+    'menu_class' => false,
+    'container' => false,
+  ));
+}
