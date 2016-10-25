@@ -645,8 +645,12 @@ input[type=number] {
   text-decoration: none;
   display: block;
   padding: 20px 0; }
-  #site-identity h1 {
-    margin: 0; }
+  #site-identity h1, #site-identity p {
+    margin: 0;
+    color: #333;
+    font-size: 2em;
+    font-family: "montserrat";
+    font-weight: 700; }
 
 #contact_infos {
   margin-bottom: 1.6rem; }
@@ -835,8 +839,8 @@ main {
   margin-right: 2.35765%;
   width: 100%;
   margin-top: 0;
-  margin-bottom: 3.2rem;
   margin-left: 0;
+  margin-bottom: 3.2rem;
   background-color: #fff;
   padding: 1.6rem 1.6rem; }
   .temoignage:last-child {
@@ -858,18 +862,21 @@ main {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 48.82117%;
+      margin-bottom: 0; }
       .temoignage:last-child {
         margin-right: 0; } }
 
-.test div {
+#ou-nous-trouver .card {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 6.17215%;
-  background-color: red; }
-  .test div:last-child {
+  width: 100%; }
+  #ou-nous-trouver .card:last-child {
     margin-right: 0; }
+  #ou-nous-trouver .card iframe {
+    width: 100%;
+    height: 300px; }
 
 .products::after {
   clear: both;
@@ -962,8 +969,6 @@ main {
       position: relative;
       display: inline-block; }
       .product #caracteristics_list .tag_info.with_thumbnail {
-        border: 2px solid black;
-        background-color: #b5ce4d;
         border-radius: 5px;
         margin: 0 1.6rem; }
       .product #caracteristics_list .tag_info.with_thumbnail::after {
@@ -973,7 +978,8 @@ main {
         margin-top: 15px;
         background-color: #c4436b;
         padding: 1.6rem 1.6rem;
-        width: 200px; }
+        width: 200px;
+        z-index: 9; }
       .product #caracteristics_list .tag_info:hover::after {
         display: block; }
       .product #caracteristics_list .tag_info.with_thumbnail::before {
@@ -999,6 +1005,13 @@ main {
     margin-right: 0;
     margin-bottom: 1.6rem; }
     .product #plant_calendar:last-child {
+      margin-right: 0; }
+  .product #conseil-pepi {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .product #conseil-pepi:last-child {
       margin-right: 0; }
   .product .related.products {
     float: left;

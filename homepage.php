@@ -22,7 +22,7 @@ do_action('woocommerce_before_main_content');
       </div>
       <figure>
         <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/mr-t.jpeg" alt="Jean-jacques souriant a la pepi">
-        <figcaption>Nous vous attendons a la pepi!</figcaption>
+        <figcaption>Nous vous attendons a la pépinière!</figcaption>
       </figure>
   </section>
 
@@ -72,7 +72,7 @@ do_action('woocommerce_before_main_content');
   </section>
 
   <section id="temoignages">
-    <h2>Témoignages clients</h2>
+    <h2>Ils sont venus chez nous</h2>
 
     <?php
       $latest_opinions = new WP_Query( array( 'posts_per_page' => 2,  'post_type' => 'avis-client') );
@@ -83,6 +83,15 @@ do_action('woocommerce_before_main_content');
         endwhile;
       }
     ?>
+  </section>
+
+  <section id="ou-nous-trouver">
+    <h2>Où nous trouver?</h2>
+
+      <div class="card">
+        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://www.openstreetmap.org/export/embed.html?bbox=-3.99876594543457%2C48.5179119855645%2C-3.9333629608154292%2C48.5521827667489&amp;layer=mapnik&amp;marker=48.535050275918515%2C-3.966064453125"></iframe><br/><small><a href="http://www.openstreetmap.org/?mlat=48.5351&amp;mlon=-3.9661#map=14/48.5351/-3.9661&amp;layers=N">View Larger Map</a></small>
+      </div>
+
   </section>
 
 <?php do_action('woocommerce_after_main_content');

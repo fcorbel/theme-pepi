@@ -65,6 +65,10 @@ add_action('woocommerce_single_product_summary', function() {
   the_content();
 }, 20);
 
+// enleve l'affichage des metas
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+
+
 // Enleve les tabs (description, attributs)
 remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
 

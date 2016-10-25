@@ -59,8 +59,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 			 * @hooked woocommerce_template_single_excerpt - 20
 			 * @hooked woocommerce_template_single_price - 25
 			 * @hooked woocommerce_template_single_add_to_cart - 30
-			 * @hooked pepi_output_product_calendar - 35
-			 * @hooked woocommerce_template_single_meta - 40
 			 * @hooked woocommerce_template_single_sharing - 50
 			 */
 			do_action( 'woocommerce_single_product_summary' );
@@ -72,8 +70,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     <h2>Caractéristiques</h2>
     <?php 
       get_template_part('blocs/content', 'product_caracteristics');
+      get_template_part('blocs/content', 'product_calendar');
       get_template_part('blocs/content', 'pepi_pro_tip');
-
     ?>
   </section>
 

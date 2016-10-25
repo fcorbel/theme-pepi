@@ -2,13 +2,9 @@
 do_action('woocommerce_before_main_content');
 ?>
 
-<!-- TODO: loop pour les posts -->
-ARCHIVE
-
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
   <?php the_content(); ?>
-ARCHIVE
 
 <?php endwhile; else : ?>
 	<p><?php _e( 'Désolé, aucun post à afficher.' ); ?></p>

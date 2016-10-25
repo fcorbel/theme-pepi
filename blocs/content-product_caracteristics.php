@@ -56,5 +56,4 @@
 
 
 <?php
-get_template_part('blocs/content', 'product_calendar');
 

@@ -1,3 +1,7 @@
+<?php
+  $title_tag = is_front_page() ? "h1" : "p";
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -18,7 +22,7 @@
       <!-- title -->
       <?php get_theme_custom_logo(); ?>
       <a id="site-identity" href="<?php echo site_url(); ?>">
-        <h1><?php bloginfo('name'); ?></h1>
+        <<?php echo $title_tag; ?>><?php bloginfo('name'); ?></<?php echo $title_tag; ?>>
       </a>
       <!-- search -->
       <!-- menu -->
