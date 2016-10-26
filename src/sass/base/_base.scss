@@ -4,7 +4,7 @@ html {
 
 body {
   background-color: $white;
-  background: linear-gradient($white, $light_green);
+  background: linear-gradient(tint($light_green, 70%), $light_green);
 }
 
 main {

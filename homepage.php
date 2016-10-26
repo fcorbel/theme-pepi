@@ -10,18 +10,16 @@ do_action('woocommerce_before_main_content');
   <section id="presentation">
     <h2>Présentation de la pépinière</h2>
       <div class="card">
-        <p>Amet natus maiores labore vel voluptatum doloribus. Necessitatibus doloremque tempore cupiditate dolores vero! Nisi consequatur consectetur possimus fuga at praesentium qui expedita. Nulla aspernatur ad nemo quod amet pariatur eius.
+        <p>Bienvenue à la pépinière de Penhoadic! Amet natus maiores labore vel voluptatum doloribus. Necessitatibus doloremque tempore cupiditate dolores vero! Nisi consequatur consectetur possimus fuga at praesentium qui expedita. Nulla aspernatur ad nemo quod amet pariatur eius.
         </p>
         <ul>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
-          <li>Lorem ipsum</li>
+          <li>Plus de 800 références</li>
+          <li>Les conseils d'un professionnel</li>
+          <li>Des prix producteurs</li>
         </ul>
       </div>
       <figure>
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/mr-t.jpeg" alt="Jean-jacques souriant a la pepi">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/jj-pepinieriste.jpg" alt="Jean-jacques souriant a la pepi">
         <figcaption>Nous vous attendons a la pépinière!</figcaption>
       </figure>
   </section>
